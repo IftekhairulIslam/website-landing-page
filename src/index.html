@@ -5,12 +5,160 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Landing Page</title>
     <link rel="stylesheet" href="./styles/styles-output.css" />
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
   </head>
-  <body>
-    <div class="flex h-screen">
-      <h1 class="m-auto bg-blue-800 text-white font-bold rounded-lg p-3">
-        Start Coding Now
-      </h1>
+  <body class="font-sans bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+      <div
+        class="container mx-auto py-4 px-4 flex items-center justify-between"
+      >
+        <div class="text-2xl font-semibold">Your Logo</div>
+        <ul class="hidden sm:flex space-x-4">
+          <li>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Home</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-gray-900">About</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Services</a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-700 hover:text-gray-900">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile Menu Button -->
+        <div class="sm:hidden">
+          <button
+            id="mobile-menu-btn"
+            class="text-gray-700 hover:text-gray-900 focus:outline-none"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Sidebar -->
+    <div
+      id="mobile-sidebar"
+      class="fixed inset-0 bg-white opacity-0 pointer-events-none transition-opacity sm:hidden"
+    >
+      <div class="flex items-center justify-end p-4">
+        <button
+          id="close-sidebar-btn"
+          class="text-gray-700 hover:text-gray-900 focus:outline-none"
+        >
+          <svg
+            class="h-6 w-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <ul class="text-center">
+        <li>
+          <a href="#" class="text-gray-700 hover:text-gray-900 py-2 block"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-gray-700 hover:text-gray-900 py-2 block"
+            >About</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-gray-700 hover:text-gray-900 py-2 block"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-gray-700 hover:text-gray-900 py-2 block"
+            >Contact</a
+          >
+        </li>
+      </ul>
     </div>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-500 text-white h-screen flex items-center">
+      <div class="container mx-auto text-center">
+        <h1 class="text-5xl font-extrabold leading-tight mb-4">
+          Welcome to Your Website
+        </h1>
+        <p class="text-lg mb-8">
+          Crafting beautiful and responsive web experiences
+        </p>
+        <a
+          href="#"
+          class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-blue-700 hover:text-white"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 px-4">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-semibold mb-8">Key Features</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Responsive Design</h3>
+            <p class="text-gray-700">
+              Our websites look great on all devices, ensuring a seamless user
+              experience.
+            </p>
+          </div>
+          <!-- Feature 2 -->
+          <div class="p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Fast Loading</h3>
+            <p class="text-gray-700">
+              Optimized for speed, providing quick and smooth page loading
+              times.
+            </p>
+          </div>
+          <!-- Feature 3 -->
+          <div class="p-6 bg-white rounded-lg shadow-md">
+            <h3 class="text-xl font-semibold mb-4">Customizable</h3>
+            <p class="text-gray-700">
+              Tailor your website to your brand with easy-to-customize
+              components.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4">
+      <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to handle mobile sidebar -->
+    <script type="text/javascript" src="./scripts/scripts.js"></script>
   </body>
 </html>
