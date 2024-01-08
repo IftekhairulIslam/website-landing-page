@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Website Landing Page</title>
     <link rel="stylesheet" href="./styles/styles-output.css" />
-    <script type="text/javascript" src="./scripts/scripts.js"></script>
   </head>
   <body class="font-sans bg-gray-100">
     <!-- Navigation -->
@@ -33,6 +32,7 @@
           <button
             id="mobile-menu-btn"
             class="text-gray-700 hover:text-gray-900 focus:outline-none"
+            onclick="openSidebar()"
           >
             <svg
               class="h-6 w-6"
@@ -56,12 +56,13 @@
     <!-- Mobile Sidebar -->
     <div
       id="mobile-sidebar"
-      class="fixed inset-0 bg-white opacity-0 pointer-events-none transition-opacity sm:hidden"
+      class="fixed w-[100%] top-0 bottom-0 -right-[100%] bg-white transition-all duration-500 sm:hidden"
     >
       <div class="flex items-center justify-end p-4">
         <button
           id="close-sidebar-btn"
           class="text-gray-700 hover:text-gray-900 focus:outline-none"
+          onclick="closeSidebar()"
         >
           <svg
             class="h-6 w-6"
